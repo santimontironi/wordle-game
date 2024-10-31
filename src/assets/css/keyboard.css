@@ -1,0 +1,30 @@
+.keyboard{
+    display: none;
+}
+
+@media (max-width:800px){
+    .keyboard{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        margin-top: 15px;
+        position: absolute;
+        bottom: 20px;
+    }
+    .rowKeyBoard{
+        display: flex;
+        gap: 5px;
+    }
+    .key{
+        border: none;
+        text-align: center;
+        width: 35px;
+        padding: 4px;
+        height: 42px;
+        font-size: 15px;
+    }
+}
