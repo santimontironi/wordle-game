@@ -45,9 +45,6 @@ export default function Wordle() {
       // Se clona el array para evitar mutaciones no deseadas
       const newWordArray = [...wordArray];
 
-      // Se clona la fila actual
-      newWordArray[attempt] = [...newWordArray[attempt]];
-
       // Se agrega la letra
       newWordArray[attempt][input.length - 1] = null;
 
@@ -55,6 +52,7 @@ export default function Wordle() {
     } else if (key.length === 1 && input.length < word.length) {
       // Clona wordArray para evitar mutaciones directas
       const newWordArray = [...wordArray];
+      
       newWordArray[attempt] = [...newWordArray[attempt]];
 
       // Actualiza la posición correcta con la nueva letra
